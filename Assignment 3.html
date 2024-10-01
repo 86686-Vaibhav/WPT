@@ -1,121 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Registration Form</title>
+    <title>Assignment3</title>
 </head>
+
 <body>
-    <div class="container">
-        <h2>Registration Form</h2>
-        <form id="registrationForm">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            </div>
-            <div class="form-group">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender" required>
-                    <option value="" disabled selected>Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
+    <center>
+        <h1>REGISTERATION FORM</h1>
+    </center>
+    <HR>
+    </HR>
+    <div style="display: flex;">
+        <div style="margin-top: 200px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Az5Bt3zUtiM?si=GWujTwRIOSPirsKl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        <div  style= "margin-left:100px ; margin-top: 200px;">
+            <form>
+                Name: <input type="text" id="name" placeholder="Enter Name"><br> <br>
+                Birthdate: <input type="date" id="Birthdate" placeholder="DD/MM/YYYY"><br> <br>
+                Email: <input type="email" id="email" placeholder="abc@gmail.com"><br><br>
+                Password <input type="password" id="password" placeholder="********"><br><br>
+                <label for="state">Address</label>
+                <select id="state" name="state">
+                    <option value="">--Select State--</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="UP">Uttar Pradesh</option>
+
                 </select>
-            </div>
-            <div class="form-group">
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Register</button>
-            </div>
-        </form>
+                <select id="district" name="district">
+                    <option value="">district</option>
+                    <option value="MH">Kolhapur</option>
+                    <option value="GJ">Sangli</option>
+                    <option value="KA">Pune</option>
+                    <option value="TN">Satara</option>
+                    <option value="UP">Mumbai</option>
+
+                </select>
+                <select id="city" name="city">
+                    <option value="">City</option>
+                    <option value="MH">Kolhapur</option>
+                    <option value="GJ">Ichalkaranji</option>
+                    <option value="KA">Kodoli</option>
+                    <option value="TN">Kagal</option>
+
+
+                </select>
+                <br> <br>
+                Gender<input type="radio" name="gender" id="m">Male
+                <input type="radio" name="gender" id="f">Female
+                <br>
+                <br>Upload photo<input type="file"> <br> <br>
+                select your course <select name="city" id="city" value="city">
+                    <option value="d">DAC</option>
+                    <option value="m">DMC</option>
+                    <option value="de">DESD</option>
+                    <option value="di">DITIS</option>
+                </select>
+                <br><br>
+                <input type="button" value="Register">
+                <input type="reset" name="reset" value="Clear" style="margin: 30PX;">
+
+
+
+            </form>
+
+        </div>
+
     </div>
 </body>
+
 </html>
-CSS (styles.css)
-css
-Copy code
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
-}
-
-.container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 500px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    background: #f9f9f9;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
