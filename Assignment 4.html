@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>><h1>CALCULATOR</h1>
+        <table style="align-items: center;">
+            <tr>
+                <td>
+                    Enter Number 1
+                </td>
+                <td> <input type="number" id="num1" value="1"></td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Number 2
+                </td>
+                <td> <input type="number" id="num2"></td>
+
+            </tr>
+            <tr>
+                <td>Result
+                </td>
+                <td> <input type="number" name="number3" id="num3"></td>
+            </tr>
+            <tr>
+                <td><br>
+                    <input type="button" value="Addition" id="add" onclick="add()">
+                    <input type="button" value="Subtraction" id="sub" onclick="sub()" style="margin-left: 40px;">
+                    <input type="button" value="Multiplication" id="mul" onclick="mul()" style="margin-left: 40px;">
+
+                    <input type="button" value="Division" id="dive" onclick="dive()" style="margin-left: 40px;">
+                </td>
+            </tr>
+
+
+        </table>
+
+    </center>
+    <script>
+
+        function add() {
+            debugger;
+            var a = document.getElementById("num1");
+            var n = Number(a.value);
+            var b = document.getElementById("num2");
+            var m = Number(b.value);
+            var c = n + m;
+            console.log(c);
+            var temp = document.getElementById("num3");
+            temp.value = c;
+
+
+
+
+        }
+        function sub() {
+            debugger;
+            var a = document.getElementById("num1");
+            var n = Number(a.value);
+            var b = document.getElementById("num2");
+            var m = Number(b.value);
+            var c = n - m;
+            console.log(c);
+            var temp = document.getElementById("num3");
+            temp.value = c;
+
+
+
+
+        }
+        function mul() {
+            debugger;
+            var a = document.getElementById("num1");
+            var n = Number(a.value);
+            var b = document.getElementById("num2");
+            var m = Number(b.value);
+            var c = n * m;
+            console.log(c);
+            var temp = document.getElementById("num3");
+            temp.value = c;
+
+
+
+
+        }
+
+
+
+        function dive() {
+            debugger;
+            var a = document.getElementById("num1");
+            var n = Number(a.value);
+            var b = document.getElementById("num2");
+            var m = Number(b.value);
+            var c = n / m;
+            console.log(c);
+            var temp = document.getElementById("num3");
+            temp.value = c;
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
